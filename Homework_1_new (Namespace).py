@@ -34,7 +34,7 @@ def string_info(string: str) -> tuple:
     return (len(string), string.upper(), string.lower())
 
 
-def is_contains(string, list_to_search):
+def is_contains(string: str, list_to_search: list) -> bool:
     count_calls()
     for s in list_to_search:
         if string.lower() == s.lower():
